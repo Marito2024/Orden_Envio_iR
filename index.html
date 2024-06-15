@@ -9,6 +9,21 @@
 </head>
 <body class="container">
     <h1 class="mt-5">Formulario de Orden de Envío</h1>
+
+    <!-- Sección de Calculadora de Costo de Envío -->
+    <div class="mt-3 mb-5">
+        <h2>Calculadora de Costo de Envío</h2>
+        <form id="calculadoraEnvioForm">
+            <div class="form-group">
+                <label for="codigoPostal">Código Postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" class="form-control" required>
+            </div>
+            <button type="button" id="calcularCostoEnvio" class="btn btn-info">Calcular Costo</button>
+        </form>
+        <div id="costoEnvioResultado" class="mt-3"></div>
+    </div>
+
+    <!-- Formulario de Orden de Envío -->
     <form id="ordenForm" class="mt-3">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -34,8 +49,7 @@
         <p>Gracias por enviar su orden. Recibirá un correo de confirmación pronto.</p>
     </div>
 
-    <!-- Enlace al archivo JavaScript personalizado -->
-    <script src="app.js"></script>
+    <script src="app.js"></script> <!-- Enlace al archivo JavaScript personalizado -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
