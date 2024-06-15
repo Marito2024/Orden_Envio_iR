@@ -1,103 +1,44 @@
 /* Archivo: style.css */
 
-/* Estilos generales para la página */
+/* Estilo general de la página */
 body {
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
     color: #333;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
 }
 
-/* Contenedor principal */
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+/* Encabezados */
+h1, h2 {
+    color: #0056b3;
+}
+
+/* Formulario */
+form {
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Encabezado principal */
-h1 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo de los campos del formulario */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    font-weight: bold;
-    color: #555;
-}
-
-.form-control {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 1em;
-}
-
-/* Botón de envío */
-.btn {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 4px;
-}
-
-.btn-primary {
+/* Botones */
+button {
     background-color: #007bff;
-    border-color: #007bff;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-.btn-primary:hover {
+button:hover {
     background-color: #0056b3;
-    border-color: #004085;
 }
 
-/* Mensaje de confirmación */
-#confirmacion {
-    text-align: center;
-    color: #28a745;
-}
-
-#confirmacion h2 {
-    font-size: 2em;
-}
-
-#confirmacion p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Estilos adicionales para dispositivos móviles */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    .btn {
-        font-size: 1em;
-    }
-
-    #confirmacion h2 {
-        font-size: 1.5em;
-    }
-
-    #confirmacion p {
-        font-size: 1em;
-    }
+/* Resultado del Costo de Envío */
+#costoEnvioResultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
 }
